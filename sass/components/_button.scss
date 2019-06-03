@@ -6,7 +6,7 @@
         padding: 1.5rem 4rem;
         border-radius: 10rem;
         display: inline-block;
-        transition: all 0.2;
+        transition: all 0.2s;
         position: relative;
         font-size: $default-font-size;
     }
@@ -48,8 +48,16 @@
         }
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
     &--animated {
-    
         animation: moveInBottom 1s ease-out 0.75s;
         animation-fill-mode: backwards;
     }
